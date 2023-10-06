@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Components Wireframe</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+     
+    /* Add custom styles here */
+
+ 
+
+    section {
+        padding-top: 80px; /* Add this */
+    }
+
+    @media (min-width: 992px) {
+        section {
+            padding-top: 120px; /* Add this */
+        }
+    }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar-main {
+            background-color: #333;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar-brand-main {
+            font-size: 24px;
+            color: #fff !important;
+        }
+
+        .navbar-nav-main .nav-link {
+            color: #fff;
+            font-size: 18px;
+            margin: 0 10px;
+        }
+
+        .navbar-nav-main .nav-link:hover {
+            text-decoration: underline;
+        }
+
+        .navbar-custom {
+            background-color: #f8f9fa;
+            padding: 10px 0;
+        }
+
+        .navbar-brand-custom {
+            font-size: 20px;
+            color: #333 !important;
+        }
+
+        .navbar-nav-custom .nav-link {
+            font-size: 18px;
+            margin: 0 10px;
+        }
+
+        .navbar-nav-custom .nav-link img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .custom-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .custom-card i {
+            color: #007bff;
+            font-size: 40px;
+        }
+
+        .custom-card p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Main -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-main">
+        <div class="container">
+            <a class="navbar-brand navbar-brand-main" href="service.html">[Your Logo]</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="jumbotron text-center">
+        <h1 class="display-4">Welcome to Your Website</h1>
+        <p class="lead">Your tagline/slogan goes here.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10">
+                    <h1 class="display-5">About Us</h1>
+                    <p class="lead">This is your awesome company</p>
+                    <p>We are passionate about [describe your company]. Our team is dedicated to [your mission or goal]. We take pride in [unique selling points or strengths]. Our experienced professionals bring creativity and innovation to every project. With a focus on [key areas or industries], we strive to [impact or improve].</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section text-center bg-light">
+        <h1 class="display-5 mb-5">Our Services</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card custom-card">
+                        <i class="fas fa-cog fa-3x mb-3"></i>
+                        <h3>Service 1</h3>
+                        <p>Short description of Service 1.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card custom-card">
+                        <i class="fas fa-chart-bar fa-3x mb-3"></i>
+                        <h3>Service 2</h3>
+                        <p>Short description of Service 2.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card custom-card">
+                        <i class="fas fa-globe fa-3x mb-3"></i>
+                        <h3>Service 3</h3>
+                        <p>Short description of Service 3.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section text-center">
+        <h1 class="display-5">Gallery</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <img src="https://via.placeholder.com/400" alt="Image 1">
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <img src="https://via.placeholder.com/400" alt="Image 2">
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <img src="https://via.placeholder.com/400" alt="Image 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section text-center bg-light">
+        <div class="container">
+            <h1 class="display-5 mb-5">Contact Us</h1>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card p-4">
+                        <i class="fas fa-map-marker-alt fa-2x mb-3"></i>
+                        <p>123 Main Street, Your City, Country</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card p-4">
+                        <i class="fas fa-phone fa-2x mb-3"></i>
+                        <p>+123-456-7890</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card p-4">
+                        <i class="fas fa-envelope fa-2x mb-3"></i>
+                        <p>info@example.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <a href="home.html" class="btn btn-link">
+        <i class="fas fa-arrow-left"></i> Back to Home Page
+    </a>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>&copy; 2023 Your Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+</body>
+
+</html>
